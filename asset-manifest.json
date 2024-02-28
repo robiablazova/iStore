@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/iStore/static/css/main.f855e6bc.css",
+    "main.js": "/iStore/static/js/main.9a5c7ef5.js",
+    "index.html": "/iStore/index.html",
+    "main.f855e6bc.css.map": "/iStore/static/css/main.f855e6bc.css.map",
+    "main.9a5c7ef5.js.map": "/iStore/static/js/main.9a5c7ef5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.9a5c7ef5.js"
+  ]
+}
