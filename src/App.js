@@ -1,27 +1,19 @@
-// import { Navigate, Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes } from "react-router-dom";
 import "./App.css";
-// import { AuthProvider } from "./hoc/AuthProvider";
-// import Layout from "./components/reactrouter/Layout";
-// import HomePage from "./components/pages/HomePage";
-// import AboutPage from "./components/pages/AboutPage";
-// import BlogPage from "./components/pages/BlogPage";
-// import SinglePage from "./components/pages/SinglePage";
-// import EditPost from "./components/pages/EditPost";
-// import CreatePost from "./components/pages/CreatePost";
-// import NotFound from "./components/istore/NotFound";
-import Counter from "./components/Counter";
+import { AuthProvider } from "./hoc/AuthProvider";
+import Layout from "./components/reactrouter/Layout";
+import HomePage from "./components/pages/HomePage";
+import AboutPage from "./components/pages/AboutPage";
+import BlogPage from "./components/pages/BlogPage";
+import SinglePage from "./components/pages/SinglePage";
+import EditPost from "./components/pages/EditPost";
+import CreatePost from "./components/pages/CreatePost";
+import NotFound from "./components/istore/NotFound";
 
 function App() {
   return (
     <div>
-      <Counter/>
-    </div>
-  );
-}
-
-export default App;
-
-{/* <AuthProvider>
+      <AuthProvider>
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<HomePage />} />
@@ -38,4 +30,9 @@ export default App;
             <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>
-      </AuthProvider> */}
+      </AuthProvider>
+    </div>
+  );
+}
+
+export default App;
