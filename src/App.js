@@ -1,79 +1,41 @@
-import { Link, Route, Routes } from "react-router-dom";
+// import { Navigate, Route, Routes } from "react-router-dom";
 import "./App.css";
-import MacBook from "./components/macbook/MacBook";
-import Iphone from "./components/iphone/Iphone";
-import AppleWatch from "./components/applewatch/AppleWatch";
-import AirPods from "./components/airpods/AirPods";
-import styled from "styled-components";
+// import { AuthProvider } from "./hoc/AuthProvider";
+// import Layout from "./components/reactrouter/Layout";
+// import HomePage from "./components/pages/HomePage";
+// import AboutPage from "./components/pages/AboutPage";
+// import BlogPage from "./components/pages/BlogPage";
+// import SinglePage from "./components/pages/SinglePage";
+// import EditPost from "./components/pages/EditPost";
+// import CreatePost from "./components/pages/CreatePost";
+// import NotFound from "./components/istore/NotFound";
+import Counter from "./components/Counter";
 
 function App() {
   return (
     <div>
-      <Div>
-        <Link style={{ textDecoration: "none" }} to="/macbook">
-          <Icon>
-          <img
-            style={{width:'55px'}}
-            src="https://www.istore.kg/media/header/macbook_pro_14_and_16__f6lz56ku7x6y_large_s0gEAbo.svg"
-            alt=""
-          />
-          Mac
-          </Icon>
-        </Link>
-        <Link style={{ textDecoration: "none" }} to="/iphone">
-          <Icon>
-          <img
-            style={{width:'30px'}}
-            src="https://www.istore.kg/media/header/iphone_13_pro_light__bywz8u012wk2_large_Vr4Wl2b.svg"
-            alt=""
-          />
-          Iphone
-          </Icon>
-        </Link>
-        <Link style={{ textDecoration: "none" }} to="/applewatch">
-          <Icon>
-          <img
-            style={{width:'20px'}}
-            src="https://www.istore.kg/media/header/watch_nav_series_7_light__dv9ck4f6pyi6_large_GOL3bKR.svg"
-            alt=""
-          />
-          AppleWatch
-          </Icon>
-        </Link>
-        <Link style={{ textDecoration: "none" }} to="/airpods">
-          <Icon>
-          <img
-            style={{width:'35px'}}
-            src="https://www.istore.kg/media/header/airpods-pro-header_lSPZOZ0.svg"
-            alt=""
-          />
-          AirPods
-          </Icon>
-        </Link>
-      </Div>
-      <Routes>
-        <Route path="/macbook" element={<MacBook />} />
-        <Route path="/iphone" element={<Iphone />} />
-        <Route path="/applewatch" element={<AppleWatch />} />
-        <Route path="/airpods" element={<AirPods />} />
-      </Routes>
+      <Counter/>
     </div>
   );
 }
 
 export default App;
 
-const Div = styled.div`
-  width: 100%;
-  height: 75px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: #f1f1f1;
-`;
+{/* <AuthProvider>
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<HomePage />} />
+            <Route path="about" element={<AboutPage />}>
+              <Route path="contacts" element={<p>Our contacts</p>} />
+              <Route path="team" element={<p>Our team</p>} />
+            </Route>
+            <Route path="about-us" element={<Navigate to="/about" replace />} />
+            <Route path="posts" element={<BlogPage />} />
+            <Route path="posts/:id" element={<SinglePage />} />
+            <Route path="posts/:id/edit" element={<EditPost />} />
+            <Route path="posts/new" element={<CreatePost />} />
 
-const Icon = styled.div `
-display: flex;
-flex-direction: column;
-align-items: center;
-`
+            <Route path="*" element={<NotFound />} />
+          </Route>
+        </Routes>
+      </AuthProvider> */}

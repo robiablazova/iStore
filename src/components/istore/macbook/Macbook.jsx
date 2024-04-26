@@ -29,6 +29,7 @@ const macbook = [
 ];
 
 const MacBook = () => {
+
   return (
     <Main>
       <h2>Mac</h2>
